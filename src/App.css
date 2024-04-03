@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 16px;
+    height: 700px;
+    margin: 10px auto auto;
+    max-width: 390px;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+
+.header {
+    background-image: url(https://www.shutterstock.com/image-photo/byway-lesstraveled-road-winds-through-260nw-78677713.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 140px;
+    object-fit: cover;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header_box {
+    grid-row-gap: 2px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 14px 54px;
+    padding-inline: 10px;
+    row-gap: 2px;
+    width: 100%;
+}
+
+.profile_back {
+    align-items: center;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    height: 34px;
+    justify-content: center;
+    width: 34px;
+}
+
+h2 {
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+span {
+    color: white;
+    margin: auto;
+    text-align: center;
+    grid-row: 2/3;
+    grid-column: 1/4;
+}
+
+input {
+    height: 30px;
+    margin: auto;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    grid-row: 3/4;
+    grid-column: 1/4;
+}
+
+.user {
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.user_box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .2);
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    margin: -20px auto auto;
+    overflow: scroll;
+    padding: 10px 20px;
+    row-gap: 10px;
+    width: 95%;
+}
+
+.user_list {
+    display: grid;
+    grid-template-columns: 80px auto 1fr;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px whitesmoke;
+}
+
+.user_list_detail {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: small;
+    width: 100%;
+}
+
+.user_list_img {
+    border-radius: 100%;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    overflow: hidden;
+    width: 80px;
+}
+
+.user_list_img > img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.user_text {
+    align-self: center;
+    justify-self: end;
+}
